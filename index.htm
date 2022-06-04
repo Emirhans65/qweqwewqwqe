@@ -1,0 +1,120 @@
+﻿
+<!doctype html>
+<html lang="tr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="attachments/761268935399309382/951158232989179964/Discord-gri.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="RUUSH">
+    <meta name="description" content="Bana ulaşabileceğiniz sosyal medya hesaplarımın yer aldığı web sitesidir.">
+    <meta name="keywords" content="berk, berkkorkmaz, berk korkmaz, berkkrkmz">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ruush - Anasayfa">
+    <meta property="og:description" content="Bana ulaşabileceğiniz sosyal medya hesaplarımın yer aldığı web sitesidir.">
+    <meta property="og:url" content="https://xruush.com">
+    <meta property="og:site_name" content="Ruush - Anasayfa">
+    <!-- Imports -->
+    <script type="module" src="ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Ruush - Anasayfa</title>
+</head>
+<body class="body">
+
+<div class="orta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 m-auto pb-4">
+                <div class="spotify-main br-10">
+                    <div class="spotify-box text-center text-white">
+                                                <p class="p-5 text-align text-success font-italic">Şu anda şarkı dinlenmiyor.</p>
+                                            </div>
+                </div>
+            </div>
+
+            <!-- Orta Kutu -->
+            <div class="col-md-5 m-auto">
+                <div class="berk br-10">
+                    <div class="container text-light">
+                        <div class="row text-center p-2">
+                            <div class="col-md">
+                                <div class="berk-img m-auto">
+                                    <img src="assets/logo.jpg" class="rounded-circle border-1" alt="logo" width="150" height="150">
+                                                                            <div class="dnd_status rounded-circle"></div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md mt-2">
+                                <h2>Ruush</h2>
+                                <ul class="d-md-flex justify-content-center p-4">
+                                    <li><a target="_blank" href="accounts/login/index.htm" class="icon"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" class="icon discord"><ion-icon name="logo-discord" style="font-size: 30px"></ion-icon></a></li>
+                                    <li><a target="_blank" href="channel/UCBGSLrvPUK1gRRKUwnUgR7g.html" class="icon"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a target="_blank" href="user/6ufl3ybhqhwu3orvueehgb9dp.html?si=8f3f28cee5b8404b" class="icon"><i class="fab fa-spotify"></i></a></li>
+                                    <li><a target="_blank" href="cdn-cgi/l/email-protection.html#1470716760717f547671667f7f7b667f79756e3a7d7a727b" class="icon"><i class="far fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <embed type="text/html" src="api/417302859739168779.svg?theme=darkt&bg=1a1a1a&animated=true&hideDiscrim=true&borderRadius=10px&hideBadges=true&idleMessage=Sosyal medya üzerinden ulaşabilirsiniz.">
+            </div>
+        </div>
+    </div>
+
+<div class="berk-top-start user-select-none">
+    <h1>BerkKrkmz</h1>
+</div>
+
+
+</div>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="boxicons@2.1.2/dist/boxicons.js"></script>
+<script>
+
+    const heart = document.getElementById("heart");
+    const p = document.getElementById("click");
+    const icon = document.getElementById("heart-i");
+    p.innerHTML = "Tıkla ve Beğen!";
+    $("#heart").on("click",function(){
+        Toast.fire({
+            icon: 'success',
+            title: "Ruush'e bir kalp gönderdin!"
+        })
+        $.ajax({
+            type: 'POST',
+            url: 'index.php',
+            data: {
+                'begeniForm': '1',
+                'begeni': '1'
+            }
+        });
+        heart.classList.add("clicked");
+        icon.classList.add("clicked");
+        icon.classList.remove("far");
+        icon.classList.add("fas");
+        p.classList.add("clicked");
+        p.innerHTML = "Beğendİn!";
+    });
+
+
+</script>
+<script src="aos@2.3.1/dist/aos.js"></script>
+<script src="npm/sweetalert2@11.js"></script>
+<script src="index.js"></script>
+<script src="boxicons@2.1.1/dist/boxicons.js"></script>
+<script src="npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

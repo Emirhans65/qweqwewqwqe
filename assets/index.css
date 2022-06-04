@@ -1,0 +1,128 @@
+@import url('../css2.css');
+@import url('../css2-1.css');
+@media only screen and (max-width: 767px) {
+    .berk-top-start h1{
+        display: none;
+    }
+    .hit-heart {
+        display: none;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Discord';
+    src: url("discord.otf");
+}
+.clicked {
+    transition: 0.5s;
+    color: #fff !important;
+}
+.orta {
+    background: #121212;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden
+}
+.berk {
+    background: #1a1a1a;
+    transition: 0.5s;
+}
+.berk-img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.online_status { position: absolute; border: 3px solid #1a1a1a; bottom: 0; right: 15px; width: 30px; height: 30px; background: #3ba55d;}
+.dnd_status { position: absolute; border: 3px solid #1a1a1a;bottom: 0; right: 15px; width: 30px; height: 30px; background: #ed4245 }
+.idle_status { position: absolute; border: 3px solid #1a1a1a; bottom: 0; right: 15px; width: 30px; height: 30px; background: #faa81a}
+.berk small {
+    font-size: 20px;
+}
+.br-10 { border-radius: 10px }
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+li a{
+    margin: 10px;
+    transition: 0.5s;
+}
+a i { font-size: 30px; }
+a:hover { color: white !important;}
+a {color: gray !important;}
+@keyframes instagram {
+    0% { color: #405DE6;; }
+    10% { color: #5851DB; }
+    20% { color: #833AB4; }
+    30% { color: #E1306C; }
+    40% { color: #FD1D1D; }
+    50% { color: #F77737; }
+    60% { color: #FCAF45; }
+    70% { color: #FFDC80; }
+    100% { color: #5851DB; }
+}
+@-webkit-keyframes instagram {
+    0% { color: #405DE6;; }
+    10% { color: #5851DB; }
+    20% { color: #833AB4; }
+    30% { color: #E1306C; }
+    40% { color: #FD1D1D; }
+    50% { color: #F77737; }
+    60% { color: #FCAF45; }
+    70% { color: #FFDC80; }
+    100% { color: #5851DB; }
+}
+@keyframes lira { 0% {color: white} 53% { color: lightsalmon} 80% {color: orange} 100% { color: white } }
+@-webkit-keyframes lira {  0% {color: white} 30% { color: lightsalmon} 80% {color: orange} 100% { color: white } }
+
+.berk-top-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-family: 'Discord', sans-serif;
+}
+.berk-top-start h1 { font-size: 4em; letter-spacing: 2px; color: #333;transition: 0.7s }
+.berk-top-start h1:hover { color: #fff;}
+.spotify-main {
+    width: auto;
+    height: auto;
+    background: #1a1a1a;
+    padding: 10px;
+    transition: 0.5s;
+}
+.sol-spotify {
+    font-size: 80px;
+    margin: 0 auto;
+}
+
+.hit-heart {
+    position: absolute !important;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Discord', sans-serif;
+}
+.hit-box {
+    margin: 10px;
+    color: #333;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.hit-box:hover {
+    color: white;
+}
+.hit-heart i {
+    font-size: 40px;
+    color: #333;
+    transition: 0.5s;
+}
+.hit-heart i:hover { color: #fff }
